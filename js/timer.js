@@ -47,6 +47,10 @@ const updateTimer = () => {
 		hoursBox.textContent = '00'
 		minutesBox.textContent = '00'
 		secondsBox.textContent = '00'
+		daysBox.style = 'color: red;'
+		hoursBox.style = 'color: red;'
+		minutesBox.style = 'color: red;'
+		secondsBox.style = 'color: red;'
 	}
 }
 
