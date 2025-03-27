@@ -1,1 +1,8 @@
-console.log('send form');
+const sendForm = () => {
+	const form = document.querySelector('.modal')
+
+	form.addEventListener('submit', () => {
+		console.log('submit')
+	})
+}
+sendForm()
