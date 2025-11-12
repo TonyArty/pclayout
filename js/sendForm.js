@@ -13,14 +13,19 @@ const sendForm = () => {
 			email: email.value
 		}
 
-		fetch('https://jsonplaceholder.typicode.com/todos/4')
+		fetch('https://jsonplaceholder.typicode.com/todos/454367')
 		.then(response => {
+			if (response.status === 404) {
+				throw new Error('Not found!')
+			}
 			return response.json()
 		})
 		.then(data => {
 			console.log(data);
 		})
-
+		.catch(error => {
+			console.warn(error.message);
+		})
 	})
 }
 sendForm()
