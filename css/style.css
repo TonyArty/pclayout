@@ -631,6 +631,10 @@ progress::-moz-progress-value {
     height: 100% !important;
 }
 
+input::placeholder {
+  color: #fff;
+}
+
 /*сетка*/
 @media (max-width: 108em) {
     html {
